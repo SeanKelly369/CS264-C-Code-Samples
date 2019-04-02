@@ -13,7 +13,7 @@ int main(void) {
   cout << "The value of the address of x is " << &x << endl;
   cout << "The value of the address of x is " << apple << endl;
   // Write code to do the following:
-  // declare another int reference variable (int pointer) call rabbit
+  // declare another int reference variable (int pointer) called rabbit
   // Set rabbit to store the address of x
   // Then change the value in x by using the rabbit variable (pointer).
   return 0;
