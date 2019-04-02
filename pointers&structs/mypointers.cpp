@@ -1,6 +1,6 @@
-//pointer is just a refference variable that stores a block of memory
-//& is an operator tha#
-//& x gives me the adress of variable x
+//pointer is just a reference variable that stores a block of memory
+//& is an operator that
+//& x gives me the address of variable x
 
 //---------------------------------------------------
 
@@ -35,18 +35,18 @@ int main(void)
     int *px = &x;
     int *py = &y;
     int *pt = &temp;
-    //int *p = &x; // the refference of variable p; stores the addess of the variable x
+    //int *p = &x; // the reference of variable p; stores the address of the variable x
 	// DELCARATION
-	// IMPORTANT! - derrenferencing
+	// IMPORTANT! - dereferencing
 	// will change the pointer to x
 	//int *rabbit = &x;
 
-	// DEREFFERENCING
-	// will overwrite rabbit!!!!!! (willl dereffernce p)
-	// wil put 22 into p and can be accessed by adress x!!
-	//*rabbit = 22; // this overrites 7
+	// DEREFERENCING
+	// will overwrite rabbit!!!!!! (will dereference p)
+	// wil put 22 into p and can be accessed by address x!!
+	//*rabbit = 22; // this overites 7
 
-	//derefferencing the point
+	//dereferencing the point
 	//*p = 6;
 	//cout << "values of x is " << x << endl; //22
 	//cout << "values of x is " << *p << endl; //22
@@ -60,7 +60,8 @@ int main(void)
 
 //? TO DO
 // write very fance code tha uses pointers swap variables around
-// hint declare three reference variable pointers, one for each other varibles x, y, and temp. next use these reference varuables pointers to perform the swap if the contents of of x and y
+// hint declare three reference variable pointers, one for each other variables x, y, 
+// and temp. next use these reference varuables pointers to perform the swap if the contents of of x and y
 }
 
 //--------------------------------------------------
@@ -78,8 +79,8 @@ int *pear = &y;
 	cout << "values of x is" << *pear << endl; //5
 
 
-// add code that uses the referebce variable pear to put the value placed in y into x
-// after this code exexutes, x will have the value 7 in it
+// add code that uses the reference variable pear to put the value placed in y into x
+// after this code executes, x will have the value 7 in it
 //x = *pear;
 *pear = x;
 	cout << "values of x is" << *pear << endl; //5
@@ -108,7 +109,7 @@ int main()
     cin >> num2;
     cout << " number 1 is " << num1 << " number 2 is " << num2 << endl;
     cout << "LETS SWAP! " << endl;
-    my_swap(&num1, &num2); // keeping the adress in the main since its taking in an int
+    my_swap(&num1, &num2); // keeping the address in the main since it's taking in an int
     return 0;
 }
 
@@ -132,7 +133,7 @@ int gcd(int &a, int &b)
 	if (a >= b) //4,2 = true
 	{
 		small = b; //!small=2
-		if (a % b == 0) // if 4 can be devided by 2 than true
+		if (a % b == 0) // if 4 can be divided by 2 than true
 			return b; //return (2)
 	}
 	else //4,2 = false
